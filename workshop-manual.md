@@ -191,12 +191,100 @@ Once this has been achieved the team is ready to start.
 {: #howto}
 Work should start immediately (during the initial presentation) on developing the Concept Model and can be facilitated by other team members.
 
+![Concept Model Example](/assets/beard-concept-model.jpg 'Taken from Workshop example')
+
+
 The Concept Model is initially a messy process and one should keep in mind its purpose. The overriding role of the concept model is to provide a focal point that allows the group to form a shared consistent view of the domain.
 
 Expect it to be redrawn multiple times and plan accordingly. Post-it notes directly to whiteboard is not a bad starting approach for this reason. Utilise the whiteboard to draw connections. Connections can be labelled. Do not get distracted by logic flows, that comes later. 
-As the above example shows: claimant and “personal injury” are identified as concepts - they are then linked with the word “suffers” - the word used in the current rule set. Age is also identified and posted close to “claimant” as it applies to that concept.
+As the above example shows: beard and “beard tax” are identified as concepts - they are then linked with the concept “person” - the word used in the current rule set. Age is also identified and posted close to “claimant” as it applies to that concept.
 
 Expect a sense of agreement to develop within the group and for that  to be suddenly interrupted by disagreement, repeatedly. The concept model provides a focal point to work out disagreements in how the model is perceived and will be modified often as part of this process. This is the concept model fulfilling its purpose.
 
-Also note in the attached example the “out of scope” section - this is a really simple way to keep the group in agreement on the scope of the project and remind people of what has been previously discussed and ruled “out of scope”.  
+Creating an _“out of scope”_ section can help keep the group in agreement on the scope of the project and remind people of what has been previously discussed and ruled _“out of scope”_.  
+
+## The Process.
+{: #theprocess}
+Once the concept model is underway and team members believe it’s reached a level of maturity and clarity which they’re comfortable with - a number of other activities which contribute to the output of the workshop (described below) can be added to the group’s work flow. 
+
+Focus the individual team members as outlined below on their appropriate tasks but to try and work through the process as a collective, sharing into the wider group the questions inspired by their respective tasks. Each of the tasks is likely to throw up new insights and changes to the concept model - and these will need to be absorbed and discussed by the whole team. Iterative over each of the rules individually so each task has an opportunity to interrupt and inform the other parts of the team while they are looking at the same components. While this feels somewhat slower, it allows the group to be giving full consideration to each point as they move through the processing of the tests, rules and service modelling impacts which will often result in a more thorough and ultimately more efficient process.
+
+It’s essential that the group keeps checking in as a whole to discuss findings as is appropriate to the process.
+
+
+## Developing the Rules.
+{: #rules}
+Note this activity can differ a little depending if existing rules are being unpacked or new rules being written or both. Regardless, it's important to keep the rules tied directly to the concept model which is the group’s shared understanding of the domain. This is best done by ensuring the terminology used is kept consistent. 
+
+The process for new rules starts with the Policy Advisor giving an outline of the proposed new rules from their research in the domain. Each of the team will likely have perspectives to share on what's proposed. 
+
+Each of the outputs of the workshop are designed to highlight gaps and inconsistencies in the rules. It’s often helpful in analysis of the rules to play with “what-if” statements that focused on changing variables that are often assumed.
+
+For example, what if the:
+* location (i.e. not in the country)
+* timing (change the order of events)
+* role (the caregiver is a child)
+* classification (they are not citizens)
+is X and does our ruleset account for that. This is a useful practice to apply during the development of the test suites which we will detail shortly.
+
+
+### Developing Decision Trees.
+{: #decisiontrees}
+**Suggested Roles:** [Legal Advisor, Business Rules Specialist, Service Designer, Rules-as-code Specialist]
+
+
+![Decision Tree Example](/assets/beard-decision-tree.jpg 'Taken from Workshop example')
+
+A decision tree is created by taking the elements of the concept model and organising them in an order that represents the sequence (if there is one) that people and systems would use to navigate the process. They provide the opportunity to look at the logic dependencies that exist in the domain. It provides another way to describe the domain and will often highlight inefficiencies in the approach and inaccuracies in the concept model.  
+_[Wikipedia entry for decision trees](https://en.wikipedia.org/wiki/Decision_tree)_
+
+
+### Developing Business Rule Statements.
+{: #rulestatements}
+**Suggested Roles:** [Business Rules Specialist, Legal Advisor]
+
+The business rules specialist keeping the concept model in mind, starts the process of crafting the statements that make up the individual components of logic within the domain. Keep in mind the order of these is often related to the decision trees. It’s important to try and keep each line or statement precise and describing a single point.
+[Wikipedia entry for business rules](https://en.wikipedia.org/wiki/Business_rule)
+
+
+### Developing Rules-as-Code.
+{: #rulesascode}
+**Suggested Roles:** [Rules-as-code Specialist, Legal Advisor]
+
+While coding the rules, it’s expected that the rules-as-code specialist keeps an eye on the underlying concept model and any assumptions they may find themselves making while developing the code should be raised. The art of coding rules is to be very careful to not include any assumptions or extensions of logic accidentally into the code but faithfully mirror the rules in an isomorphic fashion.
+
+Example uses for rules-as-code:  
+* Enables the use of test suites
+* Provides a workable implementation model of the rules. 
+* Offers a chance to publish the code in a similar manner to how legislation as text is published (such as in New Zealand).
+* Provides an opportunity for modelling the effects of the rule set in conjunction with existing datasets building on top of such concepts as the “digital twin”. 
+
+
+### Test Suites.
+{: #testsuites}
+**Suggested Roles:** [Subject Matter Specialist, Policy Advisor, Rules-as-code Specialist]
+
+The rules-as-code specialist will need to advise on the format for the tests (a spreadsheet can be a low tech solution) so they can later be converted into code and run against the rules-as-code output. They should also be relied upon to give an introduction to test writing, documentation requirements and good practice. 
+
+Writing tests is initially an exercise in expressing the policy intent but then switches to an exhaustive analysis of possible scenarios. If the rules-as-code specialist is not yet sure of the format of the tests, the scenarios can be described in spreadsheets ready for importing alongside the code.
+
+
+### Questions & Question Flows.
+{: #questionflows}
+**Suggested Roles:** [Service Designer, Business Rules Specialist, Rules-as-Code Specialist]
+
+#Todo
+
+### Service Design Research.
+{: #servicedesign}
+**Suggested Roles:** [Service Designer, Subject Matter Expert]
+
+#Todo
+
+### Process Flows.
+{: #processflows}
+**Suggested Roles:** [Business Rules Specialist, Service Designer]
+
+#Todo
+
 
