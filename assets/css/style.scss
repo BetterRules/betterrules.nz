@@ -10,7 +10,7 @@ sitemap: false
 */
 
 /* FONTS */
-$main-font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$main-font: "ff-din-web", sans-serif;
 $heading-font: sans-serif;
 $regular-font-size: 20px;
 
@@ -22,8 +22,8 @@ $regular-font-size: 20px;
 */
 
 $text-color: #454545;
-$heading-color: #404040;
-$link-color: #841212;
+$heading-color: #252525;
+$link-color: #056AA6;
 
 @import "ed";
 @import "syntax";

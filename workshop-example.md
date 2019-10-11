@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Workshop Example
 ---
 
 One of our most pressing and ever-evolving needs as scholars is to pass on our textual artifacts
@@ -57,3 +57,4 @@ for you, Kindle!
 
 To learn how to install and begin using Ed, please visit our
 [documentation page](http://minicomp.github.io/ed/documentation).
+
