@@ -137,12 +137,15 @@ h2 {
   font-size: 2rem;
 }
 
-h3, h4, h5 {
+h4, h5 {
   font-size: 1rem;
 }
 
 h3 {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  font-family: $main-font;
+  font-size: 1.4rem;
+  color: #666;
 }
 
 h4, h5, h6 {
@@ -151,7 +154,7 @@ h4, h5, h6 {
 
 /* Body text*/
 p {
-  margin-top: 1.3rem;
+  margin-top: 0.4rem;
   margin-bottom: 2rem;
   line-height: 1.5rem;
 }
