@@ -3,8 +3,9 @@ layout: page
 title: The Practical Better Rules Workshop Manual
 ---
 
-*Author: Hamish Fraser, Service Innovation Lab, NZ*  
-Version: Draft-01
+*Author: Hamish Fraser ([@verbman](https://twitter.com/verbman)), Service Innovation Lab, NZ*  
+#BetterRules, #RulesAsCode
+Version: Draft-02
 
 ## Sections
 
@@ -102,13 +103,13 @@ Establish a good understanding of the service design implications currently face
 
 ### Business Rules Specialist.
 {: #businessrulesspecialist}
-Establish a good understanding of the service design implications currently faced in the scope of the domain and prepare a simple report outlining what works and doesn’t work.  
+Bring existing knowledge of business processes and rules and be prepared to present this perspective to the workshop.
 
 
 ## A Brief Introduction to the Outputs.
 {: #overview}
 A brief introduction to each of the outputs. Outputs are marked as either **base requirements** or **optional outputs**. Choosing which outputs are focused on will be dependant on the context and purpose of the workshop.
-The outputs could be incorporated into the enveloping institutions documentation and kept as foundational reference material for the rules that have been brought into effect.
+The outputs could be incorporated into the enveloping institution's documentation and kept as foundational reference material for the rules that have been brought into effect.
 
 
 ### Concept Models.
@@ -119,7 +120,7 @@ Concept models form a working map of the concepts that make up the domain the te
 
 ### Decision Trees.
 {: #introdecisiontrees}
-_**[base requirement]**_  
+_**[optional output]**_  
 Decision trees map the logic and ways people and systems practically navigate the concept models. Experience suggests these maps can take anywhere from a few minutes to several days depending on the complexity of the concept model and the more complex ones will be revisited often in the same manner as the concept model. Their development will often result in changes to the concept model.
 
 
@@ -131,6 +132,7 @@ Business rule statements are precisely written statements of logic describing ea
 “A person is eligible to vote if:  
 * their age is 18 years or more, and  
 * they have lived in the district for 6 months”  
+
 Business rule statements are useful for both drafters and coders in establishing statements of logic. Note their dependency on the terms used and how they map to the concept model.
 
 ### Rules-as-Code.
@@ -151,7 +153,8 @@ Test suites are an adoption from the world of software development. Think of the
 ### Questions & Question Flows.
 {: #introquestionflows}
 _**[optional output]**_  
-Question flows inform the impact rules will have on the types of problems Service Designers focus on. Specifically they provide insight into the complexity and logic that the rule set demands in the form of questions that need to be answered to process the rules. An example might be a rule that states “the height of the building cannot exceed 10 metres”. This prompts the need for a question “What is the height of the building”. These questions are often hierarchical and whether they need to be asked is dependant on the answers to previous questions.
+Question flows inform the impact rules will have on the types of problems Service Designers focus on. Specifically they provide insight into the complexity and logic that the rule set demands in the form of questions that need to be answered to process the rules. An example might be a rule that states “the height of the building cannot exceed 10 metres”. This prompts the need for a question “What is the height of the building?”. These questions are often hierarchical and whether they need to be asked is dependant on the answers to previous questions.
+
 
 ### Service Design Research.
 {: #introservicedesign}
@@ -162,7 +165,7 @@ An extension to the question flows is the consideration of the impact the rulese
 ### Process Flows.
 {: #introprocessflows}
 _**[optional output]**_  
-Process flows are detailed flow charts of the process(es) that will be required to support the rules. They are especially useful in questioning how implementable a ruleset is and can provide insight into bottle necks or inconsistencies that the rules might introduce. Keep in mind there is often multiple process flows for a set of rules depending on the perspective and roles of the people the rules affect..
+Process flows are detailed flow charts of the process(es) that will be required to support the rules. They are especially useful in questioning how implementable a ruleset is and can provide insight into bottle necks or inconsistencies that the rules might introduce. Keep in mind there is often multiple process flows for a set of rules depending on the perspective and roles of the people the rules affect.
 
 
 
@@ -225,6 +228,7 @@ For example, what if the:
 * timing (change the order of events)
 * role (the caregiver is a child)
 * classification (they are not citizens)
+
 is X and does our ruleset account for that. This is a useful practice to apply during the development of the test suites which we will detail shortly.
 
 
